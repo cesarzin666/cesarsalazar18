@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - ITEC Fe y Alegría</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #FFE0E0; 
+            margin: 0;
+        }
+        .login-container {
+            background-color: #FFFFFF;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255,0,0,0.2);
+            text-align: center;
+            width: 350px;
+        }
+        .logo {
+            color: #DC143C; 
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        input {
+            display: block;
+            margin: 15px 0;
+            padding: 12px;
+            width: 100%;
+            border: 2px solid #DC143C;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #DC143C; 
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #A30000; 
+        }
+        .tagline {
+            color: #8B0000; 
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">BIENVENIDO A LA PAGINA DE FE Y ALEGRIA</div>
+        <div class="tagline"> ingrese sus datos  </div>
+        <form>
+            <input id="cesar" type="text" placeholder="Usuario" required>
+            <input id="salazar"type="password" placeholder="Contraseña" required>
+            <button id="click" type="submit">Iniciar Sesión</button>
+        </form>
+    </div>
+</body>
+  <script type="text/javascript">
+       const d=document.getElementById("click");
+    d.addEventListener('click', (e) =>{
+     
+    e.preventDefault();
+    const n=document.getElementById("cesar").value;
+    const c=document.getElementById("salazar").value;
+    const mi_nombre="Cesar";
+    const mi_contra="64371867";
+
+    if(n==mi_nombre && c==mi_contra) 
+        {
+        window.location.href="inicio.html"; 
+        } 
+    else 
+    {
+        document.getElementById("mensaje_de_error").textContent="Usuario o contraseña incorrectos.";
+    }
+
+    });
+
+
+
+
+
+  </script>
+</html>

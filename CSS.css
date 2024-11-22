@@ -1,0 +1,32 @@
+navbar{
+	display:block;
+	background:limegreen;
+	width:500px;
+	margin:auto;
+	border:40px, 20px, 40px, 20px;
+    }  
+    li{
+    	display: inline-block;
+
+    }
+  a:hover{
+  	border:5px,blue solid;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  a{
+  margin-left:15px;
+  }
+
+  #carreras{
+    background: darkred;
+  }
+   #amigos{
+    background: greem;
+  }
+   #inicio{
+    background: blue;
+  }
+   #personal{
+    background: pink;
+  }
